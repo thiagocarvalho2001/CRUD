@@ -43,15 +43,15 @@ class GradeController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return Grade::findOrFail($id);
-
         $request->validate([
             'title' => 'required|string|max:255',
             'content' => 'nullable|string',
             'important' => 'boolean'
         ]);
 
+        $grade = Grade::findOrFail($id);
         $grade->update($request->all());
+
         return $grade;
     }
 

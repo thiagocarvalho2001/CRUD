@@ -46,7 +46,7 @@ const saveGrade = async () => {
   if(!formGrade.value.title) return
 
   if(editing.value){
-    await api.put(`/grades/${gradeIdEditing}`, formGrade.value)
+    await api.put(`/grades/${gradeIdEditing.value}`, formGrade.value)
   }else{
     await api.post('/grades', formGrade.value)
   }
@@ -58,14 +58,14 @@ const saveGrade = async () => {
 }
 
 const removeGrade = async (id) => {
-  await api.delete(`/grade/${id}`)
+  await api.delete(`/grades/${id}`)
   loadGrades()
 }
 
 const editGrade = (grade) => {
   formGrade.value = { ...grade }
   editing.value = true
-  gradeIdEditing = grade.id
+  gradeIdEditing.value = grade.id
 }
 
 const cancelEdit = () => {
