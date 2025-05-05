@@ -1,0 +1,130 @@
+.grades-container {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    font-family: system-ui, sans-serif;
+  }
+  
+  .grades-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .grades-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .grades-input,
+  .grades-textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    font-family: inherit;
+    resize: vertical;
+  }
+  
+  .grades-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .grades-submit {
+    align-self: flex-end;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .grades-submit:hover {
+    background-color: #1565c0;
+  }
+  
+  .grades-separator {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .grade-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid transparent;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    transition: border-left-color 0.3s;
+  }
+  
+  .grade-card.important {
+    border-left-color: #ff9800;
+  }
+  
+  .grade-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .grade-important {
+    background-color: #ffc107;
+    color: #000;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .grade-content {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .grade-edit,
+  .grade-delete {
+    margin-right: 0.5rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  
+  .grade-edit:hover,
+  .grade-delete:hover {
+    opacity: 0.85;
+  }
+  
+  .grade-edit {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .grade-delete {
+    background-color: #e53935;
+    color: white;
+  }
+  
